@@ -26,27 +26,21 @@ public class GUI extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jToggleButton1 = new javax.swing.JToggleButton();
-
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-
-        jToggleButton1.setText("Test button");
+        setTitle("window");
+        setMinimumSize(new java.awt.Dimension(800, 600));
+        setResizable(false);
+        setSize(new java.awt.Dimension(800, 600));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(139, 139, 139)
-                .addComponent(jToggleButton1)
-                .addContainerGap(167, Short.MAX_VALUE))
+            .addGap(0, 800, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(143, Short.MAX_VALUE)
-                .addComponent(jToggleButton1)
-                .addGap(131, 131, 131))
+            .addGap(0, 600, Short.MAX_VALUE)
         );
 
         pack();
@@ -88,6 +82,5 @@ public class GUI extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JToggleButton jToggleButton1;
     // End of variables declaration//GEN-END:variables
 }
