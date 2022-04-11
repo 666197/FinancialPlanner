@@ -34,7 +34,7 @@ public class GUI extends javax.swing.JFrame {
         setResizable(false);
         setSize(new java.awt.Dimension(800, 600));
 
-        jLabel1.setText("Neew test  goes here message");
+        jLabel1.setText("HEYYYYYYY");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -43,7 +43,7 @@ public class GUI extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGap(70, 70, 70)
                 .addComponent(jLabel1)
-                .addContainerGap(573, Short.MAX_VALUE))
+                .addContainerGap(674, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
