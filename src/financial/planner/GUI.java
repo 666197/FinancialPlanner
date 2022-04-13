@@ -84,7 +84,7 @@ public class GUI extends javax.swing.JFrame {
         );
 
         jLabel2.setFont(new java.awt.Font("Open Sans", 1, 30)); // NOI18N
-        jLabel2.setText("Placeholder Text");
+        jLabel2.setText("Placeholder Text, will add more");
 
         jButton1.setText("Previous Page");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -102,7 +102,7 @@ public class GUI extends javax.swing.JFrame {
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel2)
                     .addComponent(jButton1))
-                .addContainerGap(537, Short.MAX_VALUE))
+                .addContainerGap(315, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)

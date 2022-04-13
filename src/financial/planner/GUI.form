@@ -123,7 +123,7 @@
                       <Component id="jLabel2" alignment="0" min="-2" max="-2" attributes="0"/>
                       <Component id="jButton1" alignment="0" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace pref="537" max="32767" attributes="0"/>
+                  <EmptySpace pref="315" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -145,7 +145,7 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Open Sans" size="30" style="1"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Placeholder Text"/>
+            <Property name="text" type="java.lang.String" value="Placeholder Text, will add more"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JButton" name="jButton1">
