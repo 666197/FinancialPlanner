@@ -82,7 +82,8 @@ public class SecondPage extends javax.swing.JPanel {
                 .addContainerGap(362, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
-
+    
+    //Placeholder text grayed out
     private void nameFieldFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_nameFieldFocusGained
         textField.textFocus("Name", nameField);
     }//GEN-LAST:event_nameFieldFocusGained
