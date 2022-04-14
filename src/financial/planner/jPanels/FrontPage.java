@@ -29,7 +29,7 @@ public class FrontPage extends javax.swing.JPanel {
         header = new javax.swing.JLabel();
         moneyPng = new javax.swing.JLabel();
         copyright = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
+        nextPage = new javax.swing.JButton();
 
         setPreferredSize(new java.awt.Dimension(800, 600));
 
@@ -40,7 +40,7 @@ public class FrontPage extends javax.swing.JPanel {
 
         copyright.setText("©2022, Goat Republic");
 
-        jButton1.setText("Next Page");
+        nextPage.setText("Next Page");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
@@ -50,14 +50,14 @@ public class FrontPage extends javax.swing.JPanel {
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(moneyPng)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 414, Short.MAX_VALUE)
-                        .addComponent(jButton1))
-                    .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(header, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(copyright))
-                        .addGap(0, 0, Short.MAX_VALUE)))
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(moneyPng)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 414, Short.MAX_VALUE)
+                        .addComponent(nextPage)))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
@@ -67,7 +67,7 @@ public class FrontPage extends javax.swing.JPanel {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(layout.createSequentialGroup()
                         .addGap(0, 0, Short.MAX_VALUE)
-                        .addComponent(jButton1))
+                        .addComponent(nextPage))
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(header, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -82,7 +82,7 @@ public class FrontPage extends javax.swing.JPanel {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel copyright;
     private javax.swing.JLabel header;
-    private javax.swing.JButton jButton1;
     private javax.swing.JLabel moneyPng;
+    private javax.swing.JButton nextPage;
     // End of variables declaration//GEN-END:variables
 }
