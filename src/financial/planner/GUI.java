@@ -29,32 +29,33 @@ public class GUI extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        frontPage1 = new financial.planner.jPanels.FrontPage();
+        jPanel1 = new javax.swing.JPanel();
+        frontPage2 = new financial.planner.jPanels.FrontPage();
+        secondPage2 = new financial.planner.jPanels.SecondPage();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Financial Planner");
-        setMinimumSize(new java.awt.Dimension(800, 600));
         setResizable(false);
-        setSize(new java.awt.Dimension(800, 600));
+        setSize(new java.awt.Dimension(648, 480));
         addContainerListener(new java.awt.event.ContainerAdapter() {
             public void componentAdded(java.awt.event.ContainerEvent evt) {
                 formComponentAdded(evt);
             }
         });
 
+        jPanel1.setLayout(new java.awt.CardLayout());
+        jPanel1.add(frontPage2, "card2");
+        jPanel1.add(secondPage2, "card3");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(frontPage1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(frontPage1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         pack();
@@ -100,6 +101,8 @@ public class GUI extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private financial.planner.jPanels.FrontPage frontPage1;
+    private financial.planner.jPanels.FrontPage frontPage2;
+    private javax.swing.JPanel jPanel1;
+    private financial.planner.jPanels.SecondPage secondPage2;
     // End of variables declaration//GEN-END:variables
 }
