@@ -15,6 +15,7 @@ public class FrontPage extends javax.swing.JPanel {
      */
     public FrontPage() {
         initComponents();
+        
     }
 
     /**

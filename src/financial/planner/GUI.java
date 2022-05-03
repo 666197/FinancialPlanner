@@ -3,8 +3,8 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 package financial.planner;
-
 import java.awt.Color;
+import java.awt.*;
 import financial.planner.jPanels.*;
 import javax.swing.JPanel;
 /**
@@ -18,6 +18,7 @@ public class GUI extends javax.swing.JFrame {
      */
     public GUI() {
         initComponents();
+        CardLayout card = (CardLayout)jPanel1.getLayout();
     }
     
     /**
@@ -102,7 +103,7 @@ public class GUI extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private financial.planner.jPanels.FrontPage frontPage2;
-    private javax.swing.JPanel jPanel1;
+    public javax.swing.JPanel jPanel1;
     private financial.planner.jPanels.SecondPage secondPage2;
     // End of variables declaration//GEN-END:variables
 }
