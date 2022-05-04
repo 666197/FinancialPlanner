@@ -31,23 +31,16 @@
                   <Component id="header" alignment="0" min="-2" max="-2" attributes="0"/>
                   <Component id="copyright" alignment="0" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace max="32767" attributes="0"/>
+              <EmptySpace pref="347" max="32767" attributes="0"/>
           </Group>
           <Group type="102" alignment="1" attributes="0">
               <Component id="moneyPng" min="-2" pref="252" max="-2" attributes="0"/>
-              <EmptySpace pref="288" max="32767" attributes="0"/>
-              <Component id="nextPage" min="-2" max="-2" attributes="0"/>
-              <EmptySpace max="-2" attributes="0"/>
+              <EmptySpace max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="1" attributes="0">
-          <Group type="102" alignment="1" attributes="0">
-              <EmptySpace min="208" max="32767" attributes="0"/>
-              <Component id="nextPage" min="-2" max="-2" attributes="0"/>
-              <EmptySpace max="-2" attributes="0"/>
-          </Group>
           <Group type="102" attributes="0">
               <Component id="header" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="32767" attributes="0"/>
@@ -78,14 +71,6 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="&#xa9;2022, Goat Republic"/>
       </Properties>
-    </Component>
-    <Component class="javax.swing.JButton" name="nextPage">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Next Page"/>
-      </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="nextPageActionPerformed"/>
-      </Events>
     </Component>
   </SubComponents>
 </Form>
