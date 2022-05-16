@@ -24,7 +24,13 @@ public class GUI extends javax.swing.JFrame {
     
     public void prevPage(){
         CardLayout card = (CardLayout)jPanel1.getLayout();
-        card.previous(jPanel1);
+        JPanel cards = null;
+        for (Component comp : jPanel1.getComponents()) {
+            if (comp.isVisible() == true) {
+                cards = (JPanel) comp;
+                card.previous(jPanel1);
+            }
+        }
     }
     
     public GUI() {
