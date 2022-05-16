@@ -26,15 +26,16 @@
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" attributes="0">
-              <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="header" alignment="0" min="-2" max="-2" attributes="0"/>
-                  <Component id="copyright" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Group type="102" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="header" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="copyright" alignment="0" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <Component id="moneyPng" alignment="0" min="-2" pref="252" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace pref="347" max="32767" attributes="0"/>
-          </Group>
-          <Group type="102" alignment="1" attributes="0">
-              <Component id="moneyPng" min="-2" pref="252" max="-2" attributes="0"/>
               <EmptySpace max="32767" attributes="0"/>
           </Group>
       </Group>
@@ -57,7 +58,7 @@
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Open Sans" size="30" style="1"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="&lt;html&gt;Welcome to your&lt;br/&gt;Financial Planner..."/>
+        <Property name="text" type="java.lang.String" value="&lt;html&gt;Welcome To The&lt;br/&gt;Student Budget Planner!"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="moneyPng">
