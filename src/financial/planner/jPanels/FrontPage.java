@@ -30,47 +30,37 @@ public class FrontPage extends javax.swing.JPanel {
         header = new javax.swing.JLabel();
         moneyPng = new javax.swing.JLabel();
         copyright = new javax.swing.JLabel();
+        header1 = new javax.swing.JLabel();
 
         setMinimumSize(new java.awt.Dimension(640, 480));
         setPreferredSize(new java.awt.Dimension(640, 480));
         setRequestFocusEnabled(false);
+        setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        header.setFont(new java.awt.Font("Open Sans", 1, 30)); // NOI18N
-        header.setText("<html>Welcome To The<br/>Student Budget Planner!");
+        header.setFont(new java.awt.Font("Gadugi", 1, 36)); // NOI18N
+        header.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        header.setText("<html>Student Budget Planner!");
+        header.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        add(header, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 60, -1, -1));
 
         moneyPng.setIcon(new javax.swing.ImageIcon(getClass().getResource("/financial/planner/throw-money.png"))); // NOI18N
+        add(moneyPng, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 100, 263, 371));
 
         copyright.setText("©2022, Goat Republic");
+        add(copyright, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, -1, -1));
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
-        this.setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(header, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(copyright)))
-                    .addComponent(moneyPng, javax.swing.GroupLayout.PREFERRED_SIZE, 252, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(header, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(copyright)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(moneyPng, javax.swing.GroupLayout.PREFERRED_SIZE, 365, javax.swing.GroupLayout.PREFERRED_SIZE))
-        );
+        header1.setFont(new java.awt.Font("Gadugi", 1, 36)); // NOI18N
+        header1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        header1.setText("Welcome To The");
+        header1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        add(header1, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 10, -1, 50));
     }// </editor-fold>//GEN-END:initComponents
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel copyright;
     private javax.swing.JLabel header;
+    private javax.swing.JLabel header1;
     private javax.swing.JLabel moneyPng;
     // End of variables declaration//GEN-END:variables
 }
