@@ -63,7 +63,11 @@ public class GUI extends javax.swing.JFrame {
         });
 
         jPanel1.setLayout(new java.awt.CardLayout());
+
+        frontPage2.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.add(frontPage2, "card2");
+
+        secondPage2.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.add(secondPage2, "card3");
 
         jButton1.setText("Next Page");
@@ -84,7 +88,7 @@ public class GUI extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 728, Short.MAX_VALUE)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jButton2)
