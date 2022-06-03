@@ -49,6 +49,8 @@ public class GUI extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         frontPage2 = new financial.planner.jPanels.FrontPage();
         secondPage2 = new financial.planner.jPanels.SecondPage();
+        housing1 = new financial.planner.jPanels.Housing();
+        otherExpenses2 = new financial.planner.jPanels.OtherExpenses();
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
 
@@ -69,6 +71,8 @@ public class GUI extends javax.swing.JFrame {
 
         secondPage2.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.add(secondPage2, "card3");
+        jPanel1.add(housing1, "card4");
+        jPanel1.add(otherExpenses2, "card5");
 
         jButton1.setText("Next Page");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -104,7 +108,7 @@ public class GUI extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButton1)
                     .addComponent(jButton2))
-                .addGap(0, 8, Short.MAX_VALUE))
+                .addGap(0, 7, Short.MAX_VALUE))
         );
 
         pack();
@@ -159,9 +163,11 @@ public class GUI extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private financial.planner.jPanels.FrontPage frontPage2;
+    private financial.planner.jPanels.Housing housing1;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     public javax.swing.JPanel jPanel1;
+    private financial.planner.jPanels.OtherExpenses otherExpenses2;
     private financial.planner.jPanels.SecondPage secondPage2;
     // End of variables declaration//GEN-END:variables
 }
