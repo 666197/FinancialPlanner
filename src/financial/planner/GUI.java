@@ -18,6 +18,7 @@ public class GUI extends javax.swing.JFrame {
      */
        
     public void nextPage(){
+        introduction.jLabel1.setText("Welcome, " + getName.name);
         CardLayout card = (CardLayout)jPanel1.getLayout();
         card.next(jPanel1);
     }
@@ -49,6 +50,7 @@ public class GUI extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         frontPage2 = new financial.planner.jPanels.FrontPage();
         secondPage2 = new financial.planner.jPanels.SecondPage();
+        introduction1 = new financial.planner.jPanels.introduction();
         housing1 = new financial.planner.jPanels.Housing();
         otherExpenses2 = new financial.planner.jPanels.OtherExpenses();
         monthlyIncome1 = new financial.planner.jPanels.MonthlyIncome();
@@ -72,6 +74,7 @@ public class GUI extends javax.swing.JFrame {
 
         secondPage2.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.add(secondPage2, "card3");
+        jPanel1.add(introduction1, "card7");
         jPanel1.add(housing1, "card4");
         jPanel1.add(otherExpenses2, "card5");
         jPanel1.add(monthlyIncome1, "card6");
@@ -166,6 +169,7 @@ public class GUI extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private financial.planner.jPanels.FrontPage frontPage2;
     private financial.planner.jPanels.Housing housing1;
+    private financial.planner.jPanels.introduction introduction1;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     public javax.swing.JPanel jPanel1;

@@ -127,6 +127,7 @@ public class SecondPage extends javax.swing.JPanel {
 
     private void nameFieldFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_nameFieldFocusLost
         textField.textUnfocus("Please enter name here...", nameField);
+        getName.name = nameField.getText();
     }//GEN-LAST:event_nameFieldFocusLost
 
     private void nameFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nameFieldActionPerformed
@@ -141,6 +142,6 @@ public class SecondPage extends javax.swing.JPanel {
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
-    private javax.swing.JTextField nameField;
+    public javax.swing.JTextField nameField;
     // End of variables declaration//GEN-END:variables
 }
