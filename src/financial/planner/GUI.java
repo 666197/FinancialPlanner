@@ -54,6 +54,7 @@ public class GUI extends javax.swing.JFrame {
         housing1 = new financial.planner.jPanels.Housing();
         otherExpenses2 = new financial.planner.jPanels.OtherExpenses();
         monthlyIncome1 = new financial.planner.jPanels.MonthlyIncome();
+        goal1 = new financial.planner.jPanels.goal();
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
 
@@ -78,6 +79,7 @@ public class GUI extends javax.swing.JFrame {
         jPanel1.add(housing1, "card4");
         jPanel1.add(otherExpenses2, "card5");
         jPanel1.add(monthlyIncome1, "card6");
+        jPanel1.add(goal1, "card8");
 
         jButton1.setText("Next Page");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -168,6 +170,7 @@ public class GUI extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private financial.planner.jPanels.FrontPage frontPage2;
+    private financial.planner.jPanels.goal goal1;
     private financial.planner.jPanels.Housing housing1;
     private financial.planner.jPanels.introduction introduction1;
     private javax.swing.JButton jButton1;

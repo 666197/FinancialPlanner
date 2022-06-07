@@ -8,12 +8,12 @@ package financial.planner.jPanels;
  *
  * @author salih
  */
-public class MonthlyIncome extends javax.swing.JPanel {
+public class goal extends javax.swing.JPanel {
 
     /**
-     * Creates new form MonthlyIncome
+     * Creates new form goal
      */
-    public MonthlyIncome() {
+    public goal() {
         initComponents();
     }
 
@@ -27,34 +27,34 @@ public class MonthlyIncome extends javax.swing.JPanel {
     private void initComponents() {
 
         jLabel1 = new javax.swing.JLabel();
-        income = new javax.swing.JTextField();
+        goal = new javax.swing.JTextField();
         jLabel2 = new javax.swing.JLabel();
 
-        jLabel1.setFont(new java.awt.Font("sansserif", 0, 24)); // NOI18N
-        jLabel1.setText("What is your monthly Income?");
+        jLabel1.setFont(new java.awt.Font("sansserif", 0, 36)); // NOI18N
+        jLabel1.setText("How much do you want to save up?");
 
-        income.setForeground(new java.awt.Color(153, 153, 153));
-        income.setText("0");
-        income.addFocusListener(new java.awt.event.FocusAdapter() {
+        goal.setForeground(new java.awt.Color(153, 153, 153));
+        goal.setText("0");
+        goal.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusGained(java.awt.event.FocusEvent evt) {
-                incomeFocusGained(evt);
+                goalFocusGained(evt);
             }
             public void focusLost(java.awt.event.FocusEvent evt) {
-                incomeFocusLost(evt);
+                goalFocusLost(evt);
             }
         });
-        income.addActionListener(new java.awt.event.ActionListener() {
+        goal.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                incomeActionPerformed(evt);
+                goalActionPerformed(evt);
             }
         });
-        income.addKeyListener(new java.awt.event.KeyAdapter() {
+        goal.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
-                incomeKeyTyped(evt);
+                goalKeyTyped(evt);
             }
         });
 
-        jLabel2.setFont(new java.awt.Font("sansserif", 0, 18)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("sansserif", 0, 24)); // NOI18N
         jLabel2.setText("$");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
@@ -62,53 +62,53 @@ public class MonthlyIncome extends javax.swing.JPanel {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap(199, Short.MAX_VALUE)
+                .addContainerGap(72, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addComponent(jLabel1)
-                        .addGap(188, 188, 188))
+                        .addGap(64, 64, 64))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addComponent(jLabel2)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(income, javax.swing.GroupLayout.PREFERRED_SIZE, 263, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(232, 232, 232))))
+                        .addComponent(goal, javax.swing.GroupLayout.PREFERRED_SIZE, 210, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(245, 245, 245))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(41, 41, 41)
+                .addGap(44, 44, 44)
                 .addComponent(jLabel1)
-                .addGap(99, 99, 99)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(income, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel2))
-                .addContainerGap(219, Short.MAX_VALUE))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel2)
+                    .addComponent(goal, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(285, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
-    private void incomeFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_incomeFocusGained
-        textField.textFocus("Please enter your income here...", income);
-    }//GEN-LAST:event_incomeFocusGained
-
-    private void incomeFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_incomeFocusLost
-        textField.textUnfocus("Please enter your income here...", income);
-    }//GEN-LAST:event_incomeFocusLost
-
-    private void incomeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_incomeActionPerformed
+    private void goalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_goalActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_incomeActionPerformed
+    }//GEN-LAST:event_goalActionPerformed
 
-    private void incomeKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_incomeKeyTyped
+    private void goalKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_goalKeyTyped
         char c = evt.getKeyChar();
         
         if (!Character.isDigit(c)){
             evt.consume();
         }
-    }//GEN-LAST:event_incomeKeyTyped
+    }//GEN-LAST:event_goalKeyTyped
+
+    private void goalFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_goalFocusGained
+        textField.textFocus("0", goal);
+    }//GEN-LAST:event_goalFocusGained
+
+    private void goalFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_goalFocusLost
+        textField.textUnfocus("0", goal);
+    }//GEN-LAST:event_goalFocusLost
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    public static javax.swing.JTextField income;
+    public static javax.swing.JTextField goal;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     // End of variables declaration//GEN-END:variables
