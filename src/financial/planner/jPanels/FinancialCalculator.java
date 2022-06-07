@@ -10,8 +10,7 @@ package financial.planner.jPanels;
  */
 public class FinancialCalculator {
     
-    
-    
-    public static void main(String args[]) {   
+    public static void calculateMoney(){
+        
     }
 }

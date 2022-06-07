@@ -12,8 +12,4 @@ public class getName {
     
     public static String name = "User";
     
-    public static String returnName(){
-        return name;
-    }
-    
 }

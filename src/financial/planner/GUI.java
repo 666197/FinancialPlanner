@@ -18,7 +18,7 @@ public class GUI extends javax.swing.JFrame {
      */
        
     public void nextPage(){
-        introduction.jLabel1.setText("Welcome, " + getName.name);
+        introduction.jLabel1.setText(getName.name);
         CardLayout card = (CardLayout)jPanel1.getLayout();
         card.next(jPanel1);
     }
