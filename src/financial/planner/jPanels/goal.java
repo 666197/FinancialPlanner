@@ -94,7 +94,14 @@ public class goal extends javax.swing.JPanel {
         char c = evt.getKeyChar();
         
         if (!Character.isDigit(c)){
-            evt.consume();
+            switch (c){
+                case '.':
+                    break;
+                
+                default:
+                    evt.consume();
+                    break;
+            }
         }
     }//GEN-LAST:event_goalKeyTyped
 

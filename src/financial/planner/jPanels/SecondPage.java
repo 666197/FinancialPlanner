@@ -81,6 +81,11 @@ public class SecondPage extends javax.swing.JPanel {
                 nameFieldActionPerformed(evt);
             }
         });
+        nameField.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                nameFieldKeyTyped(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -131,8 +136,24 @@ public class SecondPage extends javax.swing.JPanel {
     }//GEN-LAST:event_nameFieldFocusLost
 
     private void nameFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nameFieldActionPerformed
-        // TODO add your handling code here:
+        
     }//GEN-LAST:event_nameFieldActionPerformed
+
+    private void nameFieldKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_nameFieldKeyTyped
+        char c = evt.getKeyChar();
+        
+        if (!Character.isLetter(c)){
+            switch (c){
+                case ' ':
+                    break;
+                
+                default:
+                    evt.consume();
+                    break;
+                
+            }
+        }
+    }//GEN-LAST:event_nameFieldKeyTyped
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

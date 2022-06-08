@@ -57,7 +57,6 @@ public class FinancialCalculator {
         months50percent = (goalMoney/(moneyDifference*0.50));
         monthsTotal = (goalMoney/moneyDifference);
         
-        System.out.println(goalMoney);
         Results.goal.setText("$" + goalMoney);
     }
 }

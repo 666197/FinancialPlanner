@@ -87,11 +87,11 @@ public class MonthlyIncome extends javax.swing.JPanel {
     }// </editor-fold>//GEN-END:initComponents
 
     private void incomeFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_incomeFocusGained
-        textField.textFocus("Please enter your income here...", income);
+        textField.textFocus("0", income);
     }//GEN-LAST:event_incomeFocusGained
 
     private void incomeFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_incomeFocusLost
-        textField.textUnfocus("Please enter your income here...", income);
+        textField.textUnfocus("0", income);
     }//GEN-LAST:event_incomeFocusLost
 
     private void incomeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_incomeActionPerformed
@@ -102,7 +102,14 @@ public class MonthlyIncome extends javax.swing.JPanel {
         char c = evt.getKeyChar();
         
         if (!Character.isDigit(c)){
-            evt.consume();
+            switch (c){
+                case '.':
+                    break;
+                
+                default:
+                    evt.consume();
+                    break;
+            }
         }
     }//GEN-LAST:event_incomeKeyTyped
 

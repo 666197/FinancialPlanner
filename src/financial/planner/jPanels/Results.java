@@ -28,12 +28,32 @@ public class Results extends javax.swing.JPanel {
 
         jLabel1 = new javax.swing.JLabel();
         goal = new javax.swing.JLabel();
+        fithteen = new javax.swing.JLabel();
+        fithteen1 = new javax.swing.JLabel();
+        fithteen2 = new javax.swing.JLabel();
+        fithteen3 = new javax.swing.JLabel();
+        fithteen4 = new javax.swing.JLabel();
 
         jLabel1.setFont(new java.awt.Font("sansserif", 1, 16)); // NOI18N
         jLabel1.setText("If you put __ away of your earnings each month, it will take __ month(s) to save up to");
 
         goal.setFont(new java.awt.Font("sansserif", 1, 16)); // NOI18N
         goal.setText("$" + FinancialCalculator.goalMoney);
+
+        fithteen.setFont(new java.awt.Font("sansserif", 0, 16)); // NOI18N
+        fithteen.setText("If 15% or 0.00 put away per month, it will take 0 months");
+
+        fithteen1.setFont(new java.awt.Font("sansserif", 0, 16)); // NOI18N
+        fithteen1.setText("If 20% or 0.00 put away per month, it will take 0 months");
+
+        fithteen2.setFont(new java.awt.Font("sansserif", 0, 16)); // NOI18N
+        fithteen2.setText("If 25% or 0.00 put away per month, it will take 0 months");
+
+        fithteen3.setFont(new java.awt.Font("sansserif", 0, 16)); // NOI18N
+        fithteen3.setText("If 50% or 0.00 put away per month, it will take 0 months");
+
+        fithteen4.setFont(new java.awt.Font("sansserif", 0, 16)); // NOI18N
+        fithteen4.setText("If 100% or 0.00 put away per month, it will take 0 months");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
@@ -43,7 +63,12 @@ public class Results extends javax.swing.JPanel {
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel1)
-                    .addComponent(goal))
+                    .addComponent(goal)
+                    .addComponent(fithteen)
+                    .addComponent(fithteen1)
+                    .addComponent(fithteen2)
+                    .addComponent(fithteen3)
+                    .addComponent(fithteen4))
                 .addContainerGap(45, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -53,12 +78,27 @@ public class Results extends javax.swing.JPanel {
                 .addComponent(jLabel1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(goal)
-                .addContainerGap(372, Short.MAX_VALUE))
+                .addGap(44, 44, 44)
+                .addComponent(fithteen)
+                .addGap(18, 18, 18)
+                .addComponent(fithteen1)
+                .addGap(18, 18, 18)
+                .addComponent(fithteen2)
+                .addGap(18, 18, 18)
+                .addComponent(fithteen3)
+                .addGap(18, 18, 18)
+                .addComponent(fithteen4)
+                .addContainerGap(141, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    public static javax.swing.JLabel fithteen;
+    public static javax.swing.JLabel fithteen1;
+    public static javax.swing.JLabel fithteen2;
+    public static javax.swing.JLabel fithteen3;
+    public static javax.swing.JLabel fithteen4;
     public static javax.swing.JLabel goal;
     private javax.swing.JLabel jLabel1;
     // End of variables declaration//GEN-END:variables
