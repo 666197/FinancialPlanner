@@ -21,11 +21,11 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Component id="jLabel1" alignment="0" min="-2" max="-2" attributes="0"/>
                   <Component id="goal" alignment="0" min="-2" max="-2" attributes="0"/>
-                  <Component id="fithteen" alignment="0" min="-2" max="-2" attributes="0"/>
-                  <Component id="fithteen1" alignment="0" min="-2" max="-2" attributes="0"/>
-                  <Component id="fithteen2" alignment="0" min="-2" max="-2" attributes="0"/>
-                  <Component id="fithteen3" alignment="0" min="-2" max="-2" attributes="0"/>
-                  <Component id="fithteen4" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Component id="fifteen" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Component id="twenty" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Component id="twentyfive" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Component id="fifty" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Component id="onehundred" alignment="0" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace pref="45" max="32767" attributes="0"/>
           </Group>
@@ -39,15 +39,15 @@
               <EmptySpace max="-2" attributes="0"/>
               <Component id="goal" min="-2" max="-2" attributes="0"/>
               <EmptySpace min="-2" pref="44" max="-2" attributes="0"/>
-              <Component id="fithteen" min="-2" max="-2" attributes="0"/>
+              <Component id="fifteen" min="-2" max="-2" attributes="0"/>
               <EmptySpace type="separate" max="-2" attributes="0"/>
-              <Component id="fithteen1" min="-2" max="-2" attributes="0"/>
+              <Component id="twenty" min="-2" max="-2" attributes="0"/>
               <EmptySpace type="separate" max="-2" attributes="0"/>
-              <Component id="fithteen2" min="-2" max="-2" attributes="0"/>
+              <Component id="twentyfive" min="-2" max="-2" attributes="0"/>
               <EmptySpace type="separate" max="-2" attributes="0"/>
-              <Component id="fithteen3" min="-2" max="-2" attributes="0"/>
+              <Component id="fifty" min="-2" max="-2" attributes="0"/>
               <EmptySpace type="separate" max="-2" attributes="0"/>
-              <Component id="fithteen4" min="-2" max="-2" attributes="0"/>
+              <Component id="onehundred" min="-2" max="-2" attributes="0"/>
               <EmptySpace pref="141" max="32767" attributes="0"/>
           </Group>
       </Group>
@@ -75,7 +75,7 @@
         <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>
       </AuxValues>
     </Component>
-    <Component class="javax.swing.JLabel" name="fithteen">
+    <Component class="javax.swing.JLabel" name="fifteen">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="sansserif" size="16" style="0"/>
@@ -86,7 +86,7 @@
         <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>
       </AuxValues>
     </Component>
-    <Component class="javax.swing.JLabel" name="fithteen1">
+    <Component class="javax.swing.JLabel" name="twenty">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="sansserif" size="16" style="0"/>
@@ -97,7 +97,7 @@
         <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>
       </AuxValues>
     </Component>
-    <Component class="javax.swing.JLabel" name="fithteen2">
+    <Component class="javax.swing.JLabel" name="twentyfive">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="sansserif" size="16" style="0"/>
@@ -108,7 +108,7 @@
         <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>
       </AuxValues>
     </Component>
-    <Component class="javax.swing.JLabel" name="fithteen3">
+    <Component class="javax.swing.JLabel" name="fifty">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="sansserif" size="16" style="0"/>
@@ -119,7 +119,7 @@
         <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>
       </AuxValues>
     </Component>
-    <Component class="javax.swing.JLabel" name="fithteen4">
+    <Component class="javax.swing.JLabel" name="onehundred">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="sansserif" size="16" style="0"/>
