@@ -19,6 +19,7 @@ public class GUI extends javax.swing.JFrame {
        
     public void nextPage(){
         introduction.jLabel1.setText(getName.name);
+        FinancialCalculator.calculateMoney();
         CardLayout card = (CardLayout)jPanel1.getLayout();
         card.next(jPanel1);
     }
@@ -55,6 +56,7 @@ public class GUI extends javax.swing.JFrame {
         otherExpenses2 = new financial.planner.jPanels.OtherExpenses();
         monthlyIncome1 = new financial.planner.jPanels.MonthlyIncome();
         goal1 = new financial.planner.jPanels.goal();
+        results1 = new financial.planner.jPanels.Results();
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
 
@@ -80,6 +82,7 @@ public class GUI extends javax.swing.JFrame {
         jPanel1.add(otherExpenses2, "card5");
         jPanel1.add(monthlyIncome1, "card6");
         jPanel1.add(goal1, "card8");
+        jPanel1.add(results1, "card9");
 
         jButton1.setText("Next Page");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -178,6 +181,7 @@ public class GUI extends javax.swing.JFrame {
     public javax.swing.JPanel jPanel1;
     private financial.planner.jPanels.MonthlyIncome monthlyIncome1;
     private financial.planner.jPanels.OtherExpenses otherExpenses2;
+    private financial.planner.jPanels.Results results1;
     private financial.planner.jPanels.SecondPage secondPage2;
     // End of variables declaration//GEN-END:variables
 }

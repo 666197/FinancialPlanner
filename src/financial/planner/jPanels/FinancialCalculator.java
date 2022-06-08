@@ -10,11 +10,11 @@ package financial.planner.jPanels;
  */
 public class FinancialCalculator {
     
-    static String stringHousing = Housing.housing.getText();
-    static String stringFood = OtherExpenses.food.getText();
-    static String stringOther = OtherExpenses.other.getText();
-    static String stringIncome = MonthlyIncome.income.getText();
-    static String stringGoal = goal.goal.getText();
+    static String stringHousing;
+    static String stringFood;
+    static String stringOther;
+    static String stringIncome;
+    static String stringGoal;
     
     static double housing;
     static double food;
@@ -23,6 +23,19 @@ public class FinancialCalculator {
     static double goalMoney;
     static double expenses;
     static double moneyDifference;
+    static double months15percent;
+    static double months20percent;
+    static double months25percent;
+    static double months50percent;
+    static double monthsTotal;
+    
+    public static void setVariables(){
+        stringHousing = Housing.housing.getText();
+        stringFood = OtherExpenses.food.getText();
+        stringOther = OtherExpenses.other.getText();
+        stringIncome = MonthlyIncome.income.getText();
+        stringGoal = goal.goal.getText();
+    }
     
     public static void toDec(){
         housing = Double.parseDouble(stringHousing);
@@ -34,8 +47,17 @@ public class FinancialCalculator {
     }
     
     public static void calculateMoney(){
+        setVariables();
         toDec();
         expenses = (housing + food + other);
+        moneyDifference = (income - expenses);
+        months15percent = (goalMoney/(moneyDifference*0.15));
+        months20percent = (goalMoney/(moneyDifference*0.20));
+        months25percent = (goalMoney/(moneyDifference*0.25));
+        months50percent = (goalMoney/(moneyDifference*0.50));
+        monthsTotal = (goalMoney/moneyDifference);
         
+        System.out.println(goalMoney);
+        Results.goal.setText("$" + goalMoney);
     }
 }
