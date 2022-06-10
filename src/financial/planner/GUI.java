@@ -19,7 +19,7 @@ public class GUI extends javax.swing.JFrame {
        
     public void nextPage(){
         introduction.jLabel1.setText(getName.name);
-        FinancialCalculator.calculateMoney();
+        //FinancialCalculator.calculateMoney();
         CardLayout card = (CardLayout)jPanel1.getLayout();
         card.next(jPanel1);
     }
