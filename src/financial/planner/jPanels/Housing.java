@@ -36,6 +36,10 @@ public class Housing extends javax.swing.JPanel {
         jLabel2 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
+        residence = new javax.swing.JTextField();
+        home = new javax.swing.JTextField();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
 
         jPanel2.setBackground(new java.awt.Color(255, 255, 255));
 
@@ -91,6 +95,56 @@ public class Housing extends javax.swing.JPanel {
         jLabel5.setForeground(new java.awt.Color(51, 51, 51));
         jLabel5.setText("On Residence:");
 
+        residence.setForeground(new java.awt.Color(153, 153, 153));
+        residence.setText("0");
+        residence.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusGained(java.awt.event.FocusEvent evt) {
+                residenceFocusGained(evt);
+            }
+            public void focusLost(java.awt.event.FocusEvent evt) {
+                residenceFocusLost(evt);
+            }
+        });
+        residence.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                residenceActionPerformed(evt);
+            }
+        });
+        residence.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                residenceKeyTyped(evt);
+            }
+        });
+
+        home.setForeground(new java.awt.Color(153, 153, 153));
+        home.setText("0");
+        home.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusGained(java.awt.event.FocusEvent evt) {
+                homeFocusGained(evt);
+            }
+            public void focusLost(java.awt.event.FocusEvent evt) {
+                homeFocusLost(evt);
+            }
+        });
+        home.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                homeActionPerformed(evt);
+            }
+        });
+        home.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                homeKeyTyped(evt);
+            }
+        });
+
+        jLabel6.setFont(new java.awt.Font("Dialog", 0, 12)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel6.setText("$");
+
+        jLabel7.setFont(new java.awt.Font("Dialog", 0, 12)); // NOI18N
+        jLabel7.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel7.setText("$");
+
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
@@ -107,20 +161,29 @@ public class Housing extends javax.swing.JPanel {
                             .addComponent(header, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(42, 42, 42))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addGroup(jPanel2Layout.createSequentialGroup()
-                                .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 9, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(housing, javax.swing.GroupLayout.PREFERRED_SIZE, 412, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(jLabel1))
+                        .addComponent(jLabel1)
                         .addGap(132, 132, 132))))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                .addGap(38, 38, 38)
-                .addComponent(jLabel4)
-                .addGap(143, 143, 143)
-                .addComponent(jLabel5)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addGap(16, 16, 16)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 9, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(housing, javax.swing.GroupLayout.PREFERRED_SIZE, 122, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabel4))
+                .addGap(138, 138, 138)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jLabel5)
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 9, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(residence, javax.swing.GroupLayout.PREFERRED_SIZE, 122, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel2)
+                .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 9, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(home))
                 .addGap(68, 68, 68))
         );
         jPanel2Layout.setVerticalGroup(
@@ -139,11 +202,15 @@ public class Housing extends javax.swing.JPanel {
                     .addComponent(jLabel2)
                     .addComponent(jLabel4)
                     .addComponent(jLabel5))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 98, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(housing, javax.swing.GroupLayout.PREFERRED_SIZE, 19, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel3))
-                .addGap(85, 85, 85))
+                    .addComponent(jLabel3)
+                    .addComponent(housing, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(residence, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(home, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel6)
+                    .addComponent(jLabel7))
+                .addContainerGap(171, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
@@ -187,17 +254,75 @@ public class Housing extends javax.swing.JPanel {
         textField.textUnfocus("0", housing);
     }//GEN-LAST:event_housingFocusLost
 
+    private void residenceFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_residenceFocusGained
+        textField.textFocus("0", residence);
+    }//GEN-LAST:event_residenceFocusGained
+
+    private void residenceFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_residenceFocusLost
+        textField.textUnfocus("0", residence);
+    }//GEN-LAST:event_residenceFocusLost
+
+    private void residenceActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_residenceActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_residenceActionPerformed
+
+    private void residenceKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_residenceKeyTyped
+        char c = evt.getKeyChar();
+        
+        if (!Character.isDigit(c)){
+            switch (c){
+                case '.':
+                    break;
+                
+                default:
+                    evt.consume();
+                    break;
+            }
+        }
+    }//GEN-LAST:event_residenceKeyTyped
+
+    private void homeFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_homeFocusGained
+        textField.textFocus("0", home);
+    }//GEN-LAST:event_homeFocusGained
+
+    private void homeFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_homeFocusLost
+        textField.textUnfocus("0", home);
+    }//GEN-LAST:event_homeFocusLost
+
+    private void homeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_homeActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_homeActionPerformed
+
+    private void homeKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_homeKeyTyped
+        char c = evt.getKeyChar();
+        
+        if (!Character.isDigit(c)){
+            switch (c){
+                case '.':
+                    break;
+                
+                default:
+                    evt.consume();
+                    break;
+            }
+        }
+    }//GEN-LAST:event_homeKeyTyped
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel copyright1;
     private javax.swing.JLabel header;
+    public static javax.swing.JTextField home;
     public static javax.swing.JTextField housing;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
+    public static javax.swing.JTextField residence;
     // End of variables declaration//GEN-END:variables
 }

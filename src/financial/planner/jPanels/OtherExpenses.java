@@ -33,15 +33,24 @@ public class OtherExpenses extends javax.swing.JPanel {
         other = new javax.swing.JTextField();
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        car = new javax.swing.JTextField();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
+        clothes = new javax.swing.JTextField();
+        jLabel10 = new javax.swing.JLabel();
+        jLabel11 = new javax.swing.JLabel();
+        gas = new javax.swing.JTextField();
 
         jLabel1.setFont(new java.awt.Font("sansserif", 0, 24)); // NOI18N
-        jLabel1.setText("What other expenses may you have?");
+        jLabel1.setText("What other expenses may you have per month?");
 
         jLabel2.setFont(new java.awt.Font("sansserif", 0, 18)); // NOI18N
         jLabel2.setText("Other Expenses?");
 
         jLabel3.setFont(new java.awt.Font("sansserif", 0, 18)); // NOI18N
-        jLabel3.setText("Food per month?");
+        jLabel3.setText("Car insurance?");
 
         food.setForeground(new java.awt.Color(153, 153, 153));
         food.setText("0");
@@ -89,52 +98,160 @@ public class OtherExpenses extends javax.swing.JPanel {
 
         jLabel5.setText("$");
 
+        jLabel6.setFont(new java.awt.Font("sansserif", 0, 18)); // NOI18N
+        jLabel6.setText("Food?");
+
+        car.setForeground(new java.awt.Color(153, 153, 153));
+        car.setText("0");
+        car.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusGained(java.awt.event.FocusEvent evt) {
+                carFocusGained(evt);
+            }
+            public void focusLost(java.awt.event.FocusEvent evt) {
+                carFocusLost(evt);
+            }
+        });
+        car.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                carActionPerformed(evt);
+            }
+        });
+        car.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                carKeyTyped(evt);
+            }
+        });
+
+        jLabel7.setText("$");
+
+        jLabel8.setFont(new java.awt.Font("sansserif", 0, 18)); // NOI18N
+        jLabel8.setText("Gas?");
+
+        jLabel9.setText("$");
+
+        clothes.setForeground(new java.awt.Color(153, 153, 153));
+        clothes.setText("0");
+        clothes.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusGained(java.awt.event.FocusEvent evt) {
+                clothesFocusGained(evt);
+            }
+            public void focusLost(java.awt.event.FocusEvent evt) {
+                clothesFocusLost(evt);
+            }
+        });
+        clothes.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                clothesActionPerformed(evt);
+            }
+        });
+        clothes.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                clothesKeyTyped(evt);
+            }
+        });
+
+        jLabel10.setFont(new java.awt.Font("sansserif", 0, 18)); // NOI18N
+        jLabel10.setText("Clothes?");
+
+        jLabel11.setText("$");
+
+        gas.setForeground(new java.awt.Color(153, 153, 153));
+        gas.setText("0");
+        gas.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusGained(java.awt.event.FocusEvent evt) {
+                gasFocusGained(evt);
+            }
+            public void focusLost(java.awt.event.FocusEvent evt) {
+                gasFocusLost(evt);
+            }
+        });
+        gas.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                gasActionPerformed(evt);
+            }
+        });
+        gas.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                gasKeyTyped(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap(170, Short.MAX_VALUE)
-                .addComponent(jLabel1)
-                .addGap(157, 157, 157))
-            .addGroup(layout.createSequentialGroup()
-                .addGap(118, 118, 118)
-                .addComponent(jLabel4)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(food, javax.swing.GroupLayout.PREFERRED_SIZE, 134, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                    .addComponent(jLabel2)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 11, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(other, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(110, 110, 110))
-            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(layout.createSequentialGroup()
-                    .addGap(119, 119, 119)
-                    .addComponent(jLabel3)
-                    .addContainerGap(477, Short.MAX_VALUE)))
+                        .addGap(98, 98, 98)
+                        .addComponent(jLabel1))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(53, 53, 53)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel6)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(jLabel4)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(food, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addGap(32, 32, 32)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel3)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(jLabel7)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(car, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addGap(39, 39, 39)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel8)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(jLabel9)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(gas, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addGap(34, 34, 34)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(jLabel11)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(clothes, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(jLabel10)))
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                .addGroup(layout.createSequentialGroup()
+                                    .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 11, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGap(1, 1, 1)
+                                    .addComponent(other, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(jLabel2)))))
+                .addContainerGap(102, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(76, 76, 76)
+                .addGap(66, 66, 66)
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(87, 87, 87)
-                .addComponent(jLabel2)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGap(97, 97, 97)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel3)
+                    .addComponent(jLabel6)
+                    .addComponent(jLabel8)
+                    .addComponent(jLabel10))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(food, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(other, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(167, Short.MAX_VALUE))
-            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(layout.createSequentialGroup()
-                    .addGap(191, 191, 191)
-                    .addComponent(jLabel3)
-                    .addContainerGap(213, Short.MAX_VALUE)))
+                    .addComponent(car, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(clothes, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(gas, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(27, 27, 27)
+                .addComponent(jLabel2)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(other, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(79, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
@@ -192,14 +309,104 @@ public class OtherExpenses extends javax.swing.JPanel {
         textField.textUnfocus("0", other);
     }//GEN-LAST:event_otherFocusLost
 
+    private void carFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_carFocusGained
+        textField.textFocus("0", car);
+    }//GEN-LAST:event_carFocusGained
+
+    private void carFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_carFocusLost
+        textField.textUnfocus("0", car);
+    }//GEN-LAST:event_carFocusLost
+
+    private void carActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_carActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_carActionPerformed
+
+    private void carKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_carKeyTyped
+        char c = evt.getKeyChar();
+        
+        if (!Character.isDigit(c)){
+            switch (c){
+                case '.':
+                    break;
+                
+                default:
+                    evt.consume();
+                    break;
+            }
+        }
+    }//GEN-LAST:event_carKeyTyped
+
+    private void clothesFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_clothesFocusGained
+        textField.textFocus("0", clothes);
+    }//GEN-LAST:event_clothesFocusGained
+
+    private void clothesFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_clothesFocusLost
+        textField.textUnfocus("0", clothes);
+    }//GEN-LAST:event_clothesFocusLost
+
+    private void clothesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_clothesActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_clothesActionPerformed
+
+    private void clothesKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_clothesKeyTyped
+        char c = evt.getKeyChar();
+        
+        if (!Character.isDigit(c)){
+            switch (c){
+                case '.':
+                    break;
+                
+                default:
+                    evt.consume();
+                    break;
+            }
+        }
+    }//GEN-LAST:event_clothesKeyTyped
+
+    private void gasFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_gasFocusGained
+        textField.textFocus("0", gas);
+    }//GEN-LAST:event_gasFocusGained
+
+    private void gasFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_gasFocusLost
+        textField.textUnfocus("0", gas);
+    }//GEN-LAST:event_gasFocusLost
+
+    private void gasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gasActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_gasActionPerformed
+
+    private void gasKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_gasKeyTyped
+        char c = evt.getKeyChar();
+        
+        if (!Character.isDigit(c)){
+            switch (c){
+                case '.':
+                    break;
+                
+                default:
+                    evt.consume();
+                    break;
+            }
+        }
+    }//GEN-LAST:event_gasKeyTyped
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    public static javax.swing.JTextField car;
+    public static javax.swing.JTextField clothes;
     public static javax.swing.JTextField food;
+    public static javax.swing.JTextField gas;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     public static javax.swing.JTextField other;
     // End of variables declaration//GEN-END:variables
 }

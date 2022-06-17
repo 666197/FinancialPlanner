@@ -22,6 +22,7 @@ public class GUI extends javax.swing.JFrame {
         //FinancialCalculator.calculateMoney();
         CardLayout card = (CardLayout)jPanel1.getLayout();
         card.next(jPanel1);
+        FinancialCalculator.calculateMoney();
     }
     
     public void prevPage(){
